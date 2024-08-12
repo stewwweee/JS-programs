@@ -10,5 +10,5 @@ for (let i=1;i<arr.length;i++){
         max = arr[i]
     }
 }
-    console.log(min);
-    console.log(max);
+    console.log("the min numb is : ", min);
+    console.log("the max numb is : ",max);
