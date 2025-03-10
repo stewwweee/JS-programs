@@ -1,4 +1,4 @@
-let a = "devaid".toLowerCase();
+let a = "civic";
 let b = a.replace(/[^a-zA-Z0-0]/g,"").split("").reverse().join("");
 console.log(b);
 if (a===b){

@@ -1,15 +1,15 @@
 let primes = [];
-
-for (let i = 2; i <= 100; i++) {
+let numbers = [2,4,64,23,65,23,16,45,89,76,13];
+for (let num of numbers) {
     let isPrime = true;
-    for (let j = 2; j < i; j++) {
-        if (i % j === 0) {
+    for (let j = 2; j < num; j++) {
+        if (num % j === 0) {
             isPrime = false;
             break;
         }
     }
     if (isPrime) {
-        primes.push(i);
+        primes.push(num);
     }
 }
 
