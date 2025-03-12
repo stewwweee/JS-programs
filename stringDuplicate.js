@@ -1,25 +1,28 @@
-let str = "chris stewart";
-let duplicate = '';
-let duplicateCount = 0;
-let duplicates = {};
-// let set = new Set(str);
-// console.log([...set].join(''));
-
-for (let char of str) {
-    if (char !== ' ' && !duplicate.includes(char)) {
-        duplicate += char;
+let a = "chris stewart";
+let results='';
+let results1 = '';
+for(let i =0;i<a.length; i++){
+    let isDuplicate = false;
+    for(let j=0;j<results.length; j++){
+        if(a[i]===results[j]){
+         isDuplicate = true;
     }
-    else {
-        if (char !== ' ') {
-            if (!duplicates[char]) {
-                duplicates[char] = 1;
-
+    }
+    if(!isDuplicate){
+       results += a[i];
+    }
+    else{
+          let isReplaced = false
+        for(let k=0; k<results1.length; k++){
+         
+            if(results1[k] === a[i]){
+                isReplaced = true;
             }
-            duplicates[char]++;
-            duplicateCount++;
+        }
+        if(!isReplaced){
+            results1 += a[i];
         }
     }
 }
-console.log(`duplicate string is ${duplicate}`);
-console.log("duplicate char is ", duplicates);
-console.log(`duplicate count is ${duplicateCount}`);
+console.log(results);
+console.log(results1);
