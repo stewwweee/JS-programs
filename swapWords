@@ -1,0 +1,7 @@
+//swap words without inbuilt functions
+let a = "chris";
+let b = "stewart";
+// using destructuring to swap values
+[a, b] = [b, a];
+console.log(a); 
+console.log(b); 
