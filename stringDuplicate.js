@@ -1,28 +1,22 @@
-let a = "chris stewart";
-let results='';
-let results1 = '';
-for(let i =0;i<a.length; i++){
+//find duplicate characters in a string
+let str = "chris stewart";
+let result = '';
+let duplicates = '';
+
+for (let i = 0; i < str.length; i++) {
     let isDuplicate = false;
-    for(let j=0;j<results.length; j++){
-        if(a[i]===results[j]){
-         isDuplicate = true;
-    }
-    }
-    if(!isDuplicate){
-       results += a[i];
-    }
-    else{
-          let isReplaced = false
-        for(let k=0; k<results1.length; k++){
-         
-            if(results1[k] === a[i]){
-                isReplaced = true;
-            }
+
+    for (let j = 0; j < result.length; j++) {
+        if (str[i] === result[j]) {
+            isDuplicate = true;
         }
-        if(!isReplaced){
-            results1 += a[i];
-        }
+    }
+
+    if (!isDuplicate) {
+        result += str[i];
+    } else if (!duplicates.includes(str[i])) {
+        duplicates += str[i];
     }
 }
-console.log(results);
-console.log(results1);
+console.log(result);
+console.log(duplicates);
