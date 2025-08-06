@@ -7,20 +7,15 @@ let secSmall = arr[0];
 for (let i=0;i<arr.length;i++){
   
     if (arr[i] > max){
+        secLarge = max; // Update second largest before changing max
         max = arr[i]
     }
     if (arr[i] < min){
+        secSmall = min; // Update second smallest before changing min
         min = arr[i];
     }
 }
-for (let i=0;i<arr.length;i++){
-      if (arr[i] < max && arr[i] > secLarge){
-          secLarge = arr[i];
-      }
-      if (arr[i] > min && arr[i] < secSmall){
-          secSmall = arr[i];
-      }
-}
+
 
 console.log(secLarge);
 console.log(secSmall);
