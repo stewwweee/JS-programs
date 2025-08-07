@@ -12,7 +12,7 @@ for (let i = 0; i < arr.length; i++) {
         max = arr[i];
     } else if (arr[i] > secLarge && arr[i] !== max) {
         secLarge = arr[i];
-    }
+    } 
 
     // Update min and second smallest
     if (arr[i] < min) {
@@ -22,7 +22,8 @@ for (let i = 0; i < arr.length; i++) {
         secSmall = arr[i];
     }
 }
-
+console.log("Largest:", max);
+console.log("Smallest:", min);
 console.log("Second Largest:", secLarge);
 console.log("Second Smallest:", secSmall);
 
