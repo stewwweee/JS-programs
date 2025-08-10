@@ -1,4 +1,4 @@
-const s = "hello world";
+const s = "chris stewart quality";
 const obj = {};
 
 for (const char of s) {
@@ -7,10 +7,10 @@ for (const char of s) {
     continue;
   }
 
-  // Check if character already exists in object
-  if (obj[char]) {
+if (obj[char]) {  
     obj[char] += 1;
-  } else {
+  }
+else {
     obj[char] = 1;
   }
 }
