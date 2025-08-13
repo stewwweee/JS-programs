@@ -11,3 +11,10 @@ for (let i = 0; i < myName.length; i++) {
 }
 console.log(result);
 
+//step:2 
+// let char = myName.split(" ")
+
+// let results = char.map((element)=>{
+//    return element.charAt(0).toUpperCase() + element.slice(1)
+// }).join(" ");
+// console.log(results)
