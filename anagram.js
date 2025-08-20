@@ -4,11 +4,11 @@ let arr1=[];
 let arr2=[];
 // This code checks if two strings are anagrams of each other
 for(let i=0;i<str.length;i++){
-    arr1[arr1.length]=str[i];
+    arr1.push(str[i])
 }
 // Convert the strings into arrays of characters
 for(let j=0;j<str1.length;j++){
-    arr2[arr2.length]=str1[j]
+   arr2.push(str1[j]);
 }
 // Sort the arrays
 for(let k =0;k<arr1.length;k++){
