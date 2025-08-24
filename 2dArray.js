@@ -14,3 +14,7 @@ for (let [key, value] of Object.entries(obj)) {
 for(let key in obj) {
     console.log(`${key}: ${obj[key]}`);
 }
+
+// animals.forEach((item) => {
+//     console.log(`${item[0]}: ${item[1]}`);
+// });
