@@ -10,7 +10,7 @@ for (let i = 0; i < arr.length; i++) {
     if (arr[i] > max) {
         secLarge = max;
         max = arr[i];
-    } else if (arr[i] > secLarge && arr[i] !== max) {
+    } else if (arr[i] > secLarge && arr[i] < max) {
         secLarge = arr[i];
     } 
 
@@ -18,7 +18,7 @@ for (let i = 0; i < arr.length; i++) {
     if (arr[i] < min) {
         secSmall = min;
         min = arr[i];
-    } else if (arr[i] < secSmall && arr[i] !== min) {
+    } else if (arr[i] < secSmall && arr[i] < min) {
         secSmall = arr[i];
     }
 }
@@ -26,5 +26,4 @@ console.log("Largest:", max);
 console.log("Smallest:", min);
 console.log("Second Largest:", secLarge);
 console.log("Second Smallest:", secSmall);
-
 
