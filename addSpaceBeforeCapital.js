@@ -18,7 +18,6 @@ console.log(modifiedStr)
 //==============================================
 let str = "MyNameIsChrisStewart";
 let str1 = " ";
-const isUpperCase = str => str !== str.toUpperCase();
 for (let i=0; i<str.length;i++){
   if(i===0){
     str1+=str[i]
